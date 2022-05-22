@@ -1,6 +1,14 @@
 function computer(){
   const com = document.querySelectorAll(".piece");
   const ranNum = Math.floor(Math.random() * 3)
-  console.log(com[ranNum].getAttribute("value"))
+  return com[ranNum].getAttribute("value")
 }
-computer();
+let playerSelect;
+const body = document.querySelector("body")
+body.addEventListener("click", function(event){
+  if(event.target.classList.contains("piece")){
+    console.log()
+   console.log(event.target.getAttribute("value"));
+   console.log(playerSelect)
+ }
+})

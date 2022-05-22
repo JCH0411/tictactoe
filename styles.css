@@ -13,7 +13,7 @@ body{
 }
 .title h1{
   margin:0;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .userSelect{
   display: flex;
