@@ -6,10 +6,12 @@ body{
   margin: 0;
   font-family: sans-serif;
   padding: 30px;
+
 }
 .title{
   background-color: lightblue;
   text-align: center;
+    border-radius: 10px;
 }
 .title h1{
   margin:0;
@@ -22,6 +24,7 @@ body{
   margin-top: 40px;
   height: 300px;
   background-color: lightblue;
+    border-radius: 10px;
 }
 .userSelect{
   display: flex;
@@ -40,7 +43,11 @@ body{
   width: 100%;
   height: 100%;
 }
+.item:hover{
+  box-shadow: -4px 4px 4px 1px rgba(0,0,0, 0.1), -4px -4px 4px 1px rgba(0,0,0, 0.1) ;
+}
 .output{
+    border-radius: 10px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -48,4 +55,9 @@ body{
   height: 300px;
   background-color: lightblue;
 }
-.
+h5{
+  margin:0;
+}
+.output>h2{
+  margin-bottom: 0;
+}

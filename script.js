@@ -2,8 +2,9 @@ let playerSelect;
 let computerSelect;
 let outcome;
 let comPic = document.querySelector("#comPic");
-const body = document.querySelector("body");
+const user = document.querySelector(".userSelect");
 let output = document.querySelector("#winner-loser");
+let comOut = document.querySelector("#comOut");
 
 
 function computer(){
@@ -40,17 +41,22 @@ function playRound(user,robot){
       }
 }
 
-body.addEventListener("click", function(event){
+user.addEventListener("click", function(event){
   if(event.target.classList.contains("piece"))
      playerSelect = event.target.getAttribute("value");
 
   computerSelect = computer();
+   setTimeout(function(){
+     // comOut.textContent = computerSelect;
+      comPic.setAttribute("src","pics1/" + computerSelect + ".jpg")
+      // output.textContent = outcome;
+    },700)
+  // comPic.setAttribute("src","pics1/" + computerSelect + ".jpg")
+
   console.log(playerSelect)
   console.log(computerSelect)
   outcome = playRound(playerSelect, computerSelect);
-
-  output.textContent = outcome;
-
-
-
-  })
+  setTimeout(function(){
+      output.textContent = outcome;
+    },1500)
+})
