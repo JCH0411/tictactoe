@@ -37,7 +37,9 @@ body{
   height:100px;
   /* background-color: lightgrey; */
   border:solid 1px black;
-  margin: 40px;
+  margin:40px 20px 0;
+
+
 }
 .item>img{
   width: 100%;
